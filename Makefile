@@ -4,7 +4,7 @@ build:
 	docker build -t pytest .
 
 run:
-	docker run -it pytest /bin/bash
+	docker run -it --entrypoint /bin/bash pytest
 
 test:
 	docker run -it pytest
